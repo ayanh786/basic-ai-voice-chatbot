@@ -71,21 +71,14 @@ source venv/bin/activate
 # On Windows:
 # venv\Scripts\activate
 
-# Install dependencies
-pip install flask flask-cors google-genai
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
 ```
 
-Set your Gemini API key in your terminal session:
+Set your Gemini API key in a .env file inside the backend/ directory:
 
 ```bash
-# macOS/Linux
-export GEMINI_API_KEY="your-api-key-here"
-
-# Windows (Command Prompt)
-set GEMINI_API_KEY="your-api-key-here"
-
-# Windows (PowerShell)
-$env:GEMINI_API_KEY="your-api-key-here"
+GEMINI_API_KEY=your_api_key_here
 ```
 
 Start the Flask backend server:
